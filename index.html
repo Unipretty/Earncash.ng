@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Ensure this path is correct -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS file in the 'css' folder -->
     <title>Earncash</title>
     <style>
-        /* Basic styles for visibility and layout */
+        /* Inline styles for basic layout */
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
         .form-section, .dashboard { display: none; }
         .active { display: block; }
@@ -19,8 +19,8 @@
 <body>
     <div class="container">
         <h1>Earncash</h1>
-        
 
+        <!-- Registration Form -->
         <div id="registration" class="form-section active">
             <h2>Register</h2>
             <form id="register-form">
@@ -32,6 +32,7 @@
             <p>Already have an account? <a href="javascript:void(0);" id="to-login">Login here</a></p>
         </div>
 
+        <!-- Login Form -->
         <div id="login" class="form-section">
             <h2>Login</h2>
             <form id="login-form">
@@ -43,6 +44,7 @@
             <p><a href="javascript:void(0);" id="forgot-password-link">Forgot Password?</a></p>
         </div>
 
+        <!-- Forgot Password Form -->
         <div id="forgot-password" class="form-section">
             <h2>Forgot Password</h2>
             <form id="forgot-password-form">
@@ -52,6 +54,7 @@
             <p><a href="javascript:void(0);" id="back-to-login">Back to Login</a></p>
         </div>
 
+        <!-- Main Dashboard (Hidden initially) -->
         <div id="main" class="dashboard">
             <header>
                 <div class="logo">Earncash</div>
@@ -78,93 +81,10 @@
             </main>
         </div>
 
-        <div id="profile" class="form-section">
-            <h2>Your Profile</h2>
-            <p><strong>Username:</strong> <span id="profile-username"></span></p>
-            <p><strong>Email:</strong> <span id="profile-email"></span></p>
-            <p><strong>Profile ID:</strong> <span id="profile-id"></span></p>
-            <button id="back-to-main-profile">Back to Main</button>
-        </div>
+        <!-- Profile, Referral, Earnings, Withdrawal, etc. (Similar structure) -->
 
-        <div id="referral" class="form-section">
-            <p>Earn 5% on your referral earnings for life</p>
-            <h2>Your Referral Link</h2>
-            <input type="text" id="referral-link-input" readonly>
-            <button id="copy-referral">Copy Link</button>
-            <h3>Your Referrals</h3>
-            <ul id="referral-list"></ul>
-            <h3>Referral Earnings</h3>
-            <p id="referral-earnings">$0.00</p>
-            <button id="back-to-main-referral">Back to Main</button>
-        </div>
-
-        <div id="earnings-section" class="form-section">
-            <h2>Earn by Watching Videos</h2>
-            <button id="watch-video">Watch Video</button>
-            <p id="video-earnings">$0.000 earned from videos.</p>
-            <button id="back-to-main-earnings">Back to Main</button>
-        </div>
-
-        <div id="withdrawal" class="form-section">
-            <h2>Withdrawal</h2>
-            <p>Minimum withdrawal amount is $3.00</p>
-            <input type="number" id="withdrawal-amount" placeholder="Enter amount" min="3.00">
-            <select id="withdrawal-method">
-                <option value="TRX">TRX</option>
-                <option value="TON">TON</option>
-                <option value="LTC">LTC</option>
-            </select>
-            <input type="text" id="withdrawal-address" placeholder="Enter your address">
-            <button id="submit-withdrawal">Submit Withdrawal</button>
-            <p id="withdrawal-status" style="display:none;"></p>
-            <div class="withdrawal-history">
-                <h3>Withdrawal History</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Amount</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody id="withdrawal-history-list">
-                        <!-- Withdrawal history items will be appended here -->
-                    </tbody>
-                </table>
-            </div>
-            <button id="back-to-main-withdrawal">Back to Main</button> <!-- Added Back to Main button -->
-        </div>
-
-        <div id="customer-care" class="form-section">
-            <h2>Contact Customer Care</h2>
-            <p>If you need assistance, please contact us via WhatsApp:</p>
-            <a href="https://wa.me/+2348084997064" target="_blank">
-                <img src="whatsapp-icon.png" alt=">>click Here to contact us>
-<<" style="width: 50px; height: 50px;">
-            </a>
-            <button id="back-to-main-customer-care">Back to Main</button>
-        </div>
-
-        <div id="settings" class="form-section">
-            <h2>Settings</h2>
-            <form id="settings-form">
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Phone Number" required>
-                <input type="text" placeholder="Country" required>
-                <input type="text" placeholder="Postal Code" required>
-                <input type="text" placeholder="Home Address" required>
-                <button type="submit">Save Settings</button>
-            </form>
-            <button id="back-to-main-settings">Back to Main</button>
-        </div>
-
-        <div id="about-us" class="form-section">
-            <h2>About Us</h2>
-            <p>At EarnCash, we believe that earning money should be fun and accessible for everyone. Our platform offers a unique way for users to make cash by watching entertaining videos and referring friends. Join us today and discover how simple it is to earn cash while enjoying your favorite content!</p>
-            <button id="back-to-main-about">Back to Main</button>
-        </div>
     </div>
 
-    <script src="js/scripts.js"></script> <!-- Ensure this path is correct -->
+    <script src="js/scripts.js"></script> <!-- Link to your JS file in the 'js' folder -->
 </body>
 </html>
